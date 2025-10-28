@@ -1,9 +1,8 @@
-const count = Number(ProcessingInstruction.argv[2]);
-if (!Number.isInteger(count)) {
-    console.log('Missing number of occurrences');
-} else {
-    for ( let i = 0; i < count; i++) {
+const count = parseInt(process.argv[2]);
 
-    console.log('C is fun');
+if (isNaN(count)) console.log("Missing number of occurrences");
+else {
+    for (let i = 0; i < count; i++) {
+        console.log("C is fun");
     }
 }
